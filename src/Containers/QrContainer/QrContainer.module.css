@@ -1,0 +1,106 @@
+.Main {
+    margin: auto; 
+    margin-top: -5%;
+    background-color: rgb(30, 118, 252);
+    height: 100%;
+}
+
+.Title {
+    padding-top: 5%;
+    color: white;
+    font-family: 'Rambla', sans-serif;
+    font-size: 2rem;
+}
+
+.QrContainer {
+    z-index: 50;
+    margin-top: -5%;
+    
+}
+
+.AddedItem {
+    width: 100vw;
+    height: 100vh;
+    display: flex; 
+    margin: auto;
+    background-color: rgba(0,0,0,0.75);
+    z-index: 100;
+    top: 0%; 
+    
+}
+
+.ScannedItem {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    margin: auto; 
+}
+
+.ScannedItemInvisible {
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    margin: auto; 
+}
+
+.ItemInfo {
+    background-color: white;
+    padding: 10px; 
+    margin: auto; 
+    border: 5px solid black; 
+}
+
+.Invisible {
+    display: none; 
+}
+
+.Btn {
+    cursor: pointer;
+    background-color: orange;
+    color: white;
+    padding: 15px; 
+    border: 2px solid white;
+    width: 200px;
+    margin: auto;
+    z-index: 200;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.Btn:hover {
+    background-color: orange;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .Main {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .QrContainer{
+        padding-top: 0%;
+        height: auto;
+    }
+    .ScannedItem {
+        margin-top: -90%;
+        
+    }
+    
+}
+
+@media screen and (max-width: 500px){
+
+    .Main {
+        max-width: 500px;
+    }
+
+    .Title  h1{
+        font-size: 1.9rem;
+    }
+
+    .QrContainer {
+        padding-top: -20%;
+    }
+}

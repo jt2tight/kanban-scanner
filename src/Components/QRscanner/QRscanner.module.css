@@ -1,0 +1,64 @@
+.ScannerContainer {
+    display: flex;
+    margin: auto; 
+    width: 100%; 
+    height: 50%; 
+    padding-top: 0%;
+    justify-content: space-between;
+    
+}
+
+.QRscanner {
+    margin: auto;
+    width: 40%; 
+    height: 50%; 
+    
+}
+
+.Flip {
+    display: none;
+}
+
+.ScannerContainer p {
+    margin: auto; 
+}
+
+@media screen and (max-width: 1200px){
+
+    .ScannerContainer {
+        display: inline;
+    }
+    .QRscanner{
+        width: 80%;
+        position: relative;
+        
+    }
+
+    .Flip {
+        position: absolute;
+        display: flex;
+        margin: auto;
+        z-index: 50;
+        margin-left: 15%;
+        margin-top: -65%;
+        border: 2px solid orange; 
+        color: rgb(0, 68, 255);
+        padding: 10px;
+        background-color: white;
+        text-align: center;
+        
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .QRscanner {
+        width: 95%;
+    }
+
+    .Flip {
+        padding: 5px;
+        margin-left: 5%;
+        margin-top: -80%;
+    }
+}

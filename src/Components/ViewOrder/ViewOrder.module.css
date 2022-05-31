@@ -1,0 +1,10 @@
+.ViewOrder {
+    min-height: 100vh;
+    
+}
+
+.Header {
+    position: relative;
+    padding-top: 10%; 
+    color: white;
+}

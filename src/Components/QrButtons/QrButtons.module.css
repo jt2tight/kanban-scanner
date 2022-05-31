@@ -1,0 +1,50 @@
+.Actions {
+    display: flex;
+    margin: auto; 
+    padding-top: 5%; 
+    width: 80%;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.Button {
+    margin: auto; 
+    height: auto;
+    min-width: 200px;
+    border: 2px solid rgb(255, 255, 255); 
+    vertical-align: middle;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.Button:hover {
+    background-color: rgb(57, 114, 236);
+    color: white; 
+    border: 2px solid white; 
+}
+
+.Button:active {
+    background-color:rgb(57, 114, 236);
+    color: white;
+}
+
+@media screen and (max-width: 500px){
+
+    .Actions {
+        width: 90%;
+        padding-top: 10%;
+    }
+
+    .Button {
+        min-width: 50px;
+        width: 100px;
+        padding: 5px;
+        font-size: .65rem;
+    }
+}

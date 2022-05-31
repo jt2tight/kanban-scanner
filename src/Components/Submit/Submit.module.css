@@ -1,0 +1,52 @@
+.Submit {
+    color: white;
+    padding-top: 25%;
+}
+
+.Submit h1 {
+    font-size: 4rem;
+}
+
+hr {
+    width: 80%;
+
+}
+
+.Items {
+    margin-top: 5%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.Button {
+    padding: 20px;
+    background-color: orange;
+    border: 2px solid white;
+    width: 200px;
+    margin: auto;
+    margin-top: 15%;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.Warning {
+    width: 80%;
+    margin: auto;
+    padding-top: 10%;
+}
+
+@media screen and (max-width: 500px) {
+    .Submit h1 {
+        font-size: 2rem;
+    }
+
+    .Items {
+        width: 80%;
+        word-break:break-all;
+        margin: auto;
+        font-size: .7rem;
+    }
+}

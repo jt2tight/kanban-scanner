@@ -1,0 +1,98 @@
+.Header {
+    min-height: 10vh; 
+    width: 100vw; 
+    background-color: rgb(255, 166, 0);
+    color: white; 
+    margin: auto; 
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    font-family: 'Rambla', sans-serif;
+}
+
+.Header a {
+    color: white;
+    text-decoration: none;
+}
+
+.Header a:hover {
+    text-decoration: underline;
+}
+
+.Navbar {
+    display: flex;
+    margin: auto;
+    justify-content: space-between; 
+    width: 100%;
+    position: relative;
+    
+}
+
+.Links {
+    margin: auto; 
+    padding-top: 4%;
+}
+
+.Links ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    /* margin-left: 50%;  */
+    width: 100%; 
+    font-size: 1rem;
+    list-style-position: none;
+    list-style-type: none;
+    padding: 10px;
+    margin: auto;
+    
+}
+
+.Links ul li {
+    padding: 0px 15px; 
+    font-family: arial;
+    font-weight: bold;
+
+}
+
+.Links a {
+    color: white;
+    text-decoration: none;
+}
+
+.Links a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1200px){
+    .Navbar {
+        width: 100%;
+    }
+
+    .Links {
+        width: 100%;
+        font-size: 2rem;
+        padding-top: 5%;
+    }
+
+    .Links ul{
+        padding-top: 5%;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .NavBar {
+        width: 100%;
+    }
+
+    .Links ul {
+        font-size: 1.2rem;
+    }
+
+    .Links ul li {
+        min-width: 50px;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,76 @@
+.Modal {
+    height: 100vh;
+    width: 100vw; 
+    z-index: 50;
+    background-color: rgba(0,0,0,0.75);
+    position: fixed;
+    top: 0; 
+    left: 0;
+}
+
+.AddedItem {
+    margin: auto; 
+    /* height: 300px; */
+    width: 60%; 
+    transform: translateY(100%);
+    background-color: white;
+    border: 3px solid black;
+    padding-bottom: 25px;
+    z-index: 100;
+
+}
+
+.ItemInfo {
+    margin: auto; 
+    padding: 10px;
+}
+
+.Actions {
+    display: flex;
+    margin: auto; 
+    /* padding-top: 10px;  */
+    width: 80%;
+
+}
+
+.Button {
+    margin: auto; 
+    height: auto;
+    min-width: 200px;
+    border: 2px solid black; 
+    vertical-align: middle;
+    background-color: rgb(45, 57, 82);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.Button:hover {
+    background-color: rgb(74, 102, 163);
+    color: white; 
+}
+
+@media screen and (max-width: 1200px){
+    .AddedItem {
+        width: 90%;
+        transform: translateY(150%);
+    }
+
+    .ItemInfo {
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+        word-break:break-all;
+    }
+    .ItemInfo p{
+        font-size: .75rem;
+        
+    }
+}
+
+@media screen and (max-width: 500px){
+    .AddedItem {
+        width: 95%;
+        transform: translateY(100%)
+    }
+}
